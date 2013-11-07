@@ -1,0 +1,12 @@
+.browsehappy
+{
+	color: #000;
+	background: $white;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: $padding-base-vertical $padding-base-horizontal;
+	position: absolute;
+	top:0;
+	z-index: 10000;
+}
