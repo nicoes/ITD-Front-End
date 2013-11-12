@@ -24,7 +24,8 @@ module.exports = function(grunt){
 		            'attr-lowercase': true,
 		            'spec-char-escape': true,
 		            'id-unique': true,
-		            'style-disabled': true
+		            'style-disabled': true,
+                    'doctype-first': true
 		        },
 		        src: ['*.html']
 		    }
