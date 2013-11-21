@@ -1,24 +1,24 @@
 {
-    "name" : "SampleGrunt",
+    "name" : "ITDGrunt",
     "version" : "0.1.0",
     "author" : "Nico Eshuis",
     "private" : true,
 
     "devDependencies" : {
-        "grunt" :                       "~0.4.0",
+        "grunt" :                       "*",
         "grunt-contrib-cssmin":         "*",
         "grunt-contrib-sass":           "*",
-        "grunt-contrib-compass":		"~0.4.0",
-		"grunt-contrib-concat":			"*",
+        "grunt-contrib-compass":		"*",
+        "grunt-contrib-concat":			"*",
         "grunt-contrib-uglify":         "*",
         "grunt-contrib-watch":          "*",
         "grunt-cssc":                   "*",
         "grunt-htmlhint":               "*",
-        "grunt-image-embed":			"~0.4.0",
-        "grunt-modernizr":				"~0.4.0",
-        "grunt-includes":				"~0.4.0",
-        "grunt-contrib-requirejs":		"~0.4.0",
-        "grunt-responsive-images":		"~0.4.0",
+        "grunt-image-embed":			"*",
+        "grunt-modernizr":				"*",
+        "grunt-includes":				"*",
+        "grunt-contrib-requirejs":		"*",
+        "grunt-responsive-images":		"*",
         "matchdep":                     "*"
     }
 }

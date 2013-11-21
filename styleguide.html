@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- @stylesheet itd -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+        <!-- @stylesheet itd-ie8 -->
+    <script type='text/javascript' src="js/vendor/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <!-- Javascript development -->
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery-2.0.3.min.js"></script>
+    <script src="js/vendor/bootstrap/bootstrap.js"></script>
+    <script data-main="js/main.js" src="js/vendor/require.js"></script>
+    <!-- End javascript development -->
+
+
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+Hello ITD, to jumpstart your project refer to <a href="<!-- @path styleguide.html -->">styleguide</a>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bootstrap theme</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+<div class="jumbotron">
+    <h1>Hello, ITDepartment!</h1>
+    <p>Dit is een styleguide met (Bootstrap) HTML-elementen die reageren op de CSS van de applicatie (itd(-ie8).css). Zo kun je bijv. variabelen aanpassen in de SCSS-files en hier zien welke uitwerking dat heeft voor algemene Bootstrap HTML-structuren.</p>
+    <p><strong>Let op:</strong> Het Bootstrap 3.0 grid-systeem wordt niet gebruikt in deze file. We maken gebruik van een eigen ITD-gridsysteem (css/itd-lib/_grid-itd.scss). </p>
+</div>
+
+
+
+<div class="page-header">
+    <h1>Buttons</h1>
+</div>
+<p>
+    <button type="button" class="btn btn-lg btn-default">Default</button>
+    <button type="button" class="btn btn-lg btn-primary">Primary</button>
+    <button type="button" class="btn btn-lg btn-success">Success</button>
+    <button type="button" class="btn btn-lg btn-info">Info</button>
+    <button type="button" class="btn btn-lg btn-warning">Warning</button>
+    <button type="button" class="btn btn-lg btn-danger">Danger</button>
+    <button type="button" class="btn btn-lg btn-link">Link</button>
+</p>
+<p>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+</p>
+<p>
+    <button type="button" class="btn btn-sm btn-default">Default</button>
+    <button type="button" class="btn btn-sm btn-primary">Primary</button>
+    <button type="button" class="btn btn-sm btn-success">Success</button>
+    <button type="button" class="btn btn-sm btn-info">Info</button>
+    <button type="button" class="btn btn-sm btn-warning">Warning</button>
+    <button type="button" class="btn btn-sm btn-danger">Danger</button>
+    <button type="button" class="btn btn-sm btn-link">Link</button>
+</p>
+<p>
+    <button type="button" class="btn btn-xs btn-default">Default</button>
+    <button type="button" class="btn btn-xs btn-primary">Primary</button>
+    <button type="button" class="btn btn-xs btn-success">Success</button>
+    <button type="button" class="btn btn-xs btn-info">Info</button>
+    <button type="button" class="btn btn-xs btn-warning">Warning</button>
+    <button type="button" class="btn btn-xs btn-danger">Danger</button>
+    <button type="button" class="btn btn-xs btn-link">Link</button>
+</p>
+
+
+
+<div class="page-header">
+    <h1>Thumbnails</h1>
+</div>
+<img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" style="width: 200px; height: 200px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAVlklEQVR4Xu3c+Y8UZRMH8EbwQiVeKGoUJEbjgeARg2f811W8iEeCt0aMB0ZNxAM8QXlTk3c2PcPAzhYWzBafSfzBZerZqU89me929/RsOX78+JnBgwABAgQIbFBgiwDZoJinEyBAgMBEQIDYCAQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQ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">
+
+<img data-src="holder.js/200x200" class="img-circle" alt="200x200" style="width: 200px; height: 200px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAVlklEQVR4Xu3c+Y8UZRMH8EbwQiVeKGoUJEbjgeARg2f811W8iEeCt0aMB0ZNxAM8QXlTk3c2PcPAzhYWzBafSfzBZerZqU89me929/RsOX78+JnBgwABAgQIbFBgiwDZoJinEyBAgMBEQIDYCAQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQ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">
+
+<img data-src="holder.js/200x200" class="img-rounded" alt="200x200" style="width: 200px; height: 200px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAVlklEQVR4Xu3c+Y8UZRMH8EbwQiVeKGoUJEbjgeARg2f811W8iEeCt0aMB0ZNxAM8QXlTk3c2PcPAzhYWzBafSfzBZerZqU89me929/RsOX78+JnBgwABAgQIbFBgiwDZoJinEyBAgMBEQIDYCAQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQIEBAgNgDBAgQIJASECApNkUECBAgIEDsAQIECBBICQiQFJsiAgQIEBAg9gABAgQIpAQESIpNEQECBAgIEHuAAAECBFICAiTFpogAAQIEBIg9QIAAAQIpAQGSYlNEgAABAgLEHiBAgACBlIAASbEpIkCAAAEBYg8QIECAQEpAgKTYFBEgQICAALEHCBAgQCAlIEBSbIoIECBAQIDYAwQIECCQEhAgKTZFBAgQICBA7AECBAgQSAkIkBSbIgIECBAQIPYAAQIECKQEBEiKTREBAgQICBB7gAABAgRSAgIkxaaIAAECBASIPUCAAAECKQEBkmJTRIAAAQICxB4gQIAAgZSAAEmxKSJAgAABAWIPECBAgEBKQICk2BQRIECAgACxBwgQIEAgJSBAUmyKCBAgQECA2AMECBAgkBIQICk2RQQIECAgQOwBAgQIEEgJCJAUmyICBAgQECD2AAECBAikBARIik0RAQIECAgQe4AAAQIEUgICJMWmiAABAgQEiD1AgAABAikBAZJiU0SAAAECAsQeIECAAIGUgABJsSkiQIAAAQFiDxAgQIBASkCApNgUESBAgIAAsQcIECBAICUgQFJsiggQ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">
+
+
+
+
+
+
+<div class="page-header">
+    <h1>Dropdown menus</h1>
+</div>
+<div class="dropdown theme-dropdown clearfix">
+    <a id="dropdownMenu1" href="#" role="button" class="sr-only dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li class="active" role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    </ul>
+</div>
+
+
+
+
+<div class="page-header">
+    <h1>Navbars</h1>
+</div>
+
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+
+<div class="page-header">
+    <h1>Alerts</h1>
+</div>
+<div class="alert alert-success">
+    <strong>Well done!</strong> You successfully read this important alert message.
+</div>
+<div class="alert alert-info">
+    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+<div class="alert alert-warning">
+    <strong>Warning!</strong> Best check yo self, you're not looking too good.
+</div>
+<div class="alert alert-danger">
+    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+
+
+<div class="page-header">
+    <h1>Progress bars</h1>
+</div>
+<div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+    <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+    <div class="progress-bar progress-bar-danger" style="width: 10%"><span class="sr-only">10% Complete (danger)</span></div>
+</div>
+
+
+
+<div class="page-header">
+    <h1>List groups</h1>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+    </div><!-- /.col-sm-4 -->
+    <div class="col-sm-4">
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                Cras justo odio
+            </a>
+            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item">Morbi leo risus</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item">Vestibulum at eros</a>
+        </div>
+    </div><!-- /.col-sm-4 -->
+    <div class="col-sm-4">
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+        </div>
+    </div><!-- /.col-sm-4 -->
+</div>
+
+
+
+<div class="page-header">
+    <h1>Panels</h1>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div><!-- /.col-sm-4 -->
+    <div class="col-sm-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div><!-- /.col-sm-4 -->
+    <div class="col-sm-4">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+    </div><!-- /.col-sm-4 -->
+</div>
+
+
+
+<div class="page-header">
+    <h1>Wells</h1>
+</div>
+<div class="well">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+</div>
+
+
+</div> <!-- /container -->
+
+<div class="container">
+    <h1>Form horizontal</h1>
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="inputEmail3" class="control-label itd-2cols-1-25">Email</label>
+            <div class="  itd-2cols-2-75">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="control-label itd-2cols-1-25">Password</label>
+            <div class=" itd-2cols-2-75">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class=" itd-2cols-2-75">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+
+            <div class=" itd-2cols-2-75">
+            <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <h1>Inline form</h1>
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword2">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Sign in</button>
+    </form>
+</div>
+
+<div class="container">
+    <h1>Disabled inputs</h1>
+    <form role="form">
+        <fieldset disabled>
+            <div class="form-group">
+                <label for="disabledTextInput">Disabled input</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+            </div>
+            <div class="form-group">
+                <label for="disabledSelect">Disabled select menu</label>
+                <select id="disabledSelect" class="form-control">
+                    <option>Disabled select</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Can't check this
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+</div>
+<div class="container">
+    <h1>Form validation messages</h1>
+    <div class="form-group has-success">
+        <label class="control-label" for="inputSuccess">Input with success</label>
+        <input type="text" class="form-control" id="inputSuccess">
+    </div>
+    <div class="form-group has-warning">
+        <label class="control-label" for="inputWarning">Input with warning</label>
+        <input type="text" class="form-control" id="inputWarning">
+    </div>
+    <div class="form-group has-error">
+        <label class="control-label" for="inputError">Input with error</label>
+        <input type="text" class="form-control" id="inputError">
+    </div>
+</div>
+
+<!-- Place your own (RequireJS) script tags here
+
+<script>
+    require(['dependency'],function(DependencyReference){
+
+        var depref = new DependencyReference();
+
+        depref.init();
+
+    });
+</script>
+
+-->
+
+</body>
+</html>

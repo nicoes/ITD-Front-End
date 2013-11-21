@@ -134,8 +134,8 @@ module.exports = function(grunt){
 		    },
 		    dist: {
 		      src: ['dist/js/vendor/modernizr-min.js','dist/js/vendor/require-optimized.js'],
-		      dest: 'dist/js/built.js',
-		    },
+		      dest: 'dist/js/built.js'
+		    }
 		},
         watch: {
 		    html: {

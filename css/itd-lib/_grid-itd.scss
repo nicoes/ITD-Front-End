@@ -15,7 +15,7 @@
 @include gs-media(ma,max)
 {
   // itd 1
-   .itd-1col_1_100, .itd-2cols_1_25, .itd-2cols_2_75, .itd-2cols_1_33, .itd-2cols_2_67, .itd-2cols_1_50, .itd-2cols_2_50, .itd-2cols_1_67, .itd-2cols_2_33, .itd-2cols_1_75, .itd-2cols_2_25, .itd-3cols_1_33, .itd-3cols_2_34, .itd-3cols_3_33, .itd-4cols_1_25, .itd-4cols_2_25, .itd-4cols_3_25, .itd-4cols_4_25{
+   .itd-1col-1-100, .itd-2cols-1-25, .itd-2cols-2-75, .itd-2cols-1-33, .itd-2cols-2-67, .itd-2cols-1-50, .itd-2cols-2-50, .itd-2cols-1-67, .itd-2cols-2-33, .itd-2cols-1-75, .itd-2cols-2-25, .itd-3cols-1-33, .itd-3cols-2-34, .itd-3cols-3-33, .itd-4cols-1-25, .itd-4cols-2-25, .itd-4cols-3-25, .itd-4cols-4-25{
     clear: left;
     padding:0; margin:0;
     width: auto;
@@ -40,76 +40,76 @@
   }
 
   // itd 1
-   .itd-1col_1_100{
+   .itd-1col-1-100{
     @include gs-span(ta,all);
   }
 
   // itd 13
-   .itd-2cols_1_25{
+   .itd-2cols-1-25{
     @include gs-span(tb,1,1);
   }
 
-   .itd-2cols_2_75{
+   .itd-2cols-2-75{
     @include gs-span(tb,2,3);
   }
 
   // itd 1-2
 
-   .itd-2cols_1_33{
+   .itd-2cols-1-33{
     @include gs-span(tb,1,1);
   }
 
-   .itd-2cols_2_67{
+   .itd-2cols-2-67{
     @include gs-span(tb,2,3);
   }
 
 
   // itd 2
 
-   .itd-2cols_1_50{
+   .itd-2cols-1-50{
     @include gs-span(tc,1,2);
   }
 
-   .itd-2cols_2_50{
+   .itd-2cols-2-50{
     @include gs-span(tc,3,4);
   }
 
 
   // itd 2-1
 
-   .itd-2cols_1_67{
+   .itd-2cols-1-67{
     @include gs-span(tb,1,2);
   }
 
-   .itd-2cols_2_33{
+   .itd-2cols-2-33{
     @include gs-span(tb,3,3);
   }
 
 
   // itd 3-1
 
-   .itd-2cols_1_75{
+   .itd-2cols-1-75{
     @include gs-span(tb,1,2);
   }
 
-   .itd-2cols_2_25{
+   .itd-2cols-2-25{
     @include gs-span(tb,3,3);
   }
 
 
   // itd 3
 
-   .itd-3cols_1_33{
+   .itd-3cols-1-33{
     clear: left;
     @include gs-span(ta,all);
   }
 
-   .itd-3cols_2_34{
+   .itd-3cols-2-34{
     clear: left;
     @include gs-span(ta,all);
   }
 
-   .itd-3cols_3_33{
+   .itd-3cols-3-33{
     clear: left;
     @include gs-span(ta,all);
   }
@@ -117,17 +117,17 @@
 
   // itd 4
 
-   .itd-4cols_1_25{
+   .itd-4cols-1-25{
     @include gs-span(tc,1,2);
   }
-   .itd-4cols_2_25{
+   .itd-4cols-2-25{
     @include gs-span(tc,3,4);
   }
-   .itd-4cols_3_25{
+   .itd-4cols-3-25{
     clear: left;
     @include gs-span(tc,1,2);
   }
-   .itd-4cols_4_25{
+   .itd-4cols-4-25{
     @include gs-span(tc,3,4);
   }
 
@@ -145,90 +145,90 @@
   }
 
   // itd 1
-   .itd-1col_1_100{
+   .itd-1col-1-100{
     @include gs-span(da,all);
   }
 
   // itd 1-3
-   .itd-2cols_1_25{
+   .itd-2cols-1-25{
     @include gs-span(dc,1,1);
   }
 
-   .itd-2cols_2_75{
+   .itd-2cols-2-75{
     @include gs-span(dc,2,4);
   }
 
   // itd 1-2
 
-   .itd-2cols_1_33{
+   .itd-2cols-1-33{
     @include gs-span(db,1,1);
   }
 
-   .itd-2cols_2_67{
+   .itd-2cols-2-67{
     @include gs-span(db,2,3);
   }
 
 
   // itd 2
 
-   .itd-2cols_1_50{
+   .itd-2cols-1-50{
     @include gs-span(dc,1,2);
   }
 
-   .itd-2cols_2_50{
+   .itd-2cols-2-50{
     @include gs-span(dc,3,4);
   }
 
 
   // itd 2-1
 
-   .itd-2cols_1_67{
+   .itd-2cols-1-67{
     @include gs-span(db,1,2);
   }
 
-   .itd-2cols_2_33{
+   .itd-2cols-2-33{
     @include gs-span(db,3,3);
   }
 
 
   // itd 3-1
 
-   .itd-2cols_1_75{
+   .itd-2cols-1-75{
     @include gs-span(dc,1,3);
   }
 
-   .itd-2cols_2_25{
+   .itd-2cols-2-25{
     @include gs-span(dc,4,4);
   }
 
 
   // itd 3
 
-   .itd-3cols_1_33{
+   .itd-3cols-1-33{
     @include gs-span(db,1,1);
   }
 
-   .itd-3cols_2_34{
+   .itd-3cols-2-34{
     @include gs-span(db,2,2);
   }
 
-   .itd-3cols_3_33{
+   .itd-3cols-3-33{
     @include gs-span(db,3,3);
   }
 
 
   // itd 4
 
-   .itd-4cols_1_25{
+   .itd-4cols-1-25{
     @include gs-span(dc,1,1);
   }
-   .itd-4cols_2_25{
+   .itd-4cols-2-25{
     @include gs-span(dc,2,2);
   }
-   .itd-4cols_3_25{
+   .itd-4cols-3-25{
     @include gs-span(dc,3,3);
   }
-   .itd-4cols_4_25{
+   .itd-4cols-4-25{
     @include gs-span(dc,4,4);
   }
 }
@@ -238,43 +238,43 @@
 
 
     // itd 1-3
-     .itd-2cols_1_25{
+     .itd-2cols-1-25{
       @include gs-span(tb,3,3);
     }
 
-     .itd-2cols_2_75{
+     .itd-2cols-2-75{
       @include gs-span(tb,1,2);
     }
 
     // itd 1-2
 
-     .itd-2cols_1_33{
+     .itd-2cols-1-33{
       @include gs-span(tb,3,3);
     }
 
-     .itd-2cols_2_67{
+     .itd-2cols-2-67{
       @include gs-span(tb,1,2);
     }
 
 
     // itd 2-1
 
-     .itd-2cols_1_67{
+     .itd-2cols-1-67{
       @include gs-span(tb,2,3);
     }
 
-     .itd-2cols_2_33{
+     .itd-2cols-2-33{
       @include gs-span(tb,1,1);
     }
 
 
     // itd 3-1
 
-     .itd-2cols_1_75{
+     .itd-2cols-1-75{
       @include gs-span(tb,2,3);
     }
 
-     .itd-2cols_2_25{
+     .itd-2cols-2-25{
       @include gs-span(tb,1,1);
     }
   }
@@ -282,78 +282,78 @@
   {
 
     // itd 1
-     .itd-1col_1_100{
+     .itd-1col-1-100{
       @include gs-span(da,all);
     }
 
     // itd 1-3
-     .itd-2cols_1_25{
+     .itd-2cols-1-25{
       @include gs-span(dc,4,4);
     }
 
-     .itd-2cols_2_75{
+     .itd-2cols-2-75{
       @include gs-span(dc,1,3);
     }
 
     // itd 1-2
 
-     .itd-2cols_1_33{
+     .itd-2cols-1-33{
       @include gs-span(db,3,3);
     }
 
-     .itd-2cols_2_67{
+     .itd-2cols-2-67{
       @include gs-span(db,1,2);
     }
 
     // itd 2-1
 
-     .itd-2cols_1_67{
+     .itd-2cols-1-67{
       @include gs-span(db,2,3);
     }
 
-     .itd-2cols_2_33{
+     .itd-2cols-2-33{
       @include gs-span(db,1,1);
     }
 
 
     // itd 3-1
 
-     .itd-2cols_1_75{
+     .itd-2cols-1-75{
       @include gs-span(dc,2,4);
     }
 
-     .itd-2cols_2_25{
+     .itd-2cols-2-25{
       @include gs-span(dc,1,1);
     }
 
 
     // itd 3
 
-     .itd-3cols_1_33{
+     .itd-3cols-1-33{
       @include gs-span(db,3,3);
     }
 
-     .itd-3cols_2_34{
+     .itd-3cols-2-34{
       @include gs-span(db,2,2);
     }
 
-     .itd-3cols_3_33{
+     .itd-3cols-3-33{
       @include gs-span(db,1,1);
     }
 
 
     // itd 4
 
-     .itd-4cols_1_25{
+     .itd-4cols-1-25{
       @include gs-span(dc,4,4);
     }
-     .itd-4cols_2_25{
+     .itd-4cols-2-25{
       @include gs-span(dc,3,3);
     }
-     .itd-4cols_3_25{
+     .itd-4cols-3-25{
       @include gs-span(dc,2,2);
     }
-     .itd-4cols_4_25{
+     .itd-4cols-4-25{
       @include gs-span(dc,1,1);
     }
   }
