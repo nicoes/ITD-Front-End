@@ -13,7 +13,7 @@ Dit is een front-end library voor projecten van het ITD team. Deze library maakt
 We hebben drie niveaus van directories:
 
 - root, hierin staan alle ongecompileerde bestanden: javascript-bestanden, partial html-bestanden en scss bestanden.
-Deze directory is opgezet met de gedachte dat alles gecompileerd wordt in de "/Build"-directory met de tool "Hammer for Mac".
+Deze directory is opgezet met de gedachte dat alles gecompileerd wordt in de "/Build"-directory met de tool "Hammer for Mac" (@PeterJagt: Niet een fysieke hamer).
 
 - "/Build", hierin staan development-bestanden die gebruikt kunnen worden door bijv. back-end programmeurs.
 
