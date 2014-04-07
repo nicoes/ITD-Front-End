@@ -1,0 +1,13 @@
+/*!
+ * Sass Bootstrap v3.0.17
+ *
+ * Copyright 2013 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+*/
+
+//Are media queries supported?
+$media-queries-supported: false;
+
+@import "itd-imports";
+@import "itd-lib/browsehappy";

@@ -1,24 +1,9 @@
 {
-    "name" : "ITDGrunt",
-    "version" : "0.1.0",
-    "author" : "Nico Eshuis",
-    "private" : true,
-
-    "devDependencies" : {
-        "grunt" :                       "*",
-        "grunt-contrib-cssmin":         "*",
-        "grunt-contrib-sass":           "*",
-        "grunt-contrib-compass":		"*",
-        "grunt-contrib-concat":			"*",
-        "grunt-contrib-uglify":         "*",
-        "grunt-contrib-watch":          "*",
-        "grunt-cssc":                   "*",
-        "grunt-htmlhint":               "*",
-        "grunt-image-embed":			"*",
-        "grunt-modernizr":				"*",
-        "grunt-includes":				"*",
-        "grunt-contrib-requirejs":		"*",
-        "grunt-responsive-images":		"*",
-        "matchdep":                     "*"
+    "name":"CorePeople",
+    "version":"0.0.1",
+    "private":"true",
+    "dependencies":{
+        "express":"3.5.1",
+        "ejs":"1.0.0"
     }
 }

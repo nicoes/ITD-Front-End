@@ -1,0 +1,8 @@
+h1,h2,h3{
+  &.secondary{
+    color: $secondary-heading-color !important;
+  }
+  &.tertiary{
+    color: $tertiary-heading-color !important;
+  }
+}

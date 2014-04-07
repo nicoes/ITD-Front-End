@@ -1,0 +1,61 @@
+.core-people-icons{ background:url("../Images/icons/core-people-icons.png") top left no-repeat;display: inline-block;  }
+.cp-icon-surfconext{ width:34px; height:34px; background-position:0 0; }
+.cp-icon-live{ width:34px; height:34px; background-position:0 -34px; }
+.cp-icon-linkedin{ width:34px; height:34px; background-position:0 -68px; }
+.cp-icon-googleplus{ width:34px; height:34px; background-position:0 -102px; }
+.cp-icon-facebook{ width:34px; height:34px; background-position:0 -136px; }
+.cp-icon-kennisnet{ width:34px; height:33px; background-position:0 -170px; }
+
+.btn.btn-link.cp-icon{
+  text-align: center;
+  display: block;
+  min-width: 80px;
+  width: auto;
+  margin-top: $grid-gutter-width/3*2;
+}
+.cp-icon label{
+  color: $gray-light;
+  font-weight: normal;
+  font-size: $font-size-small;
+  display: block;
+  padding-top: $grid-gutter-width/4;
+  cursor: pointer;
+}
+.cp-icon .cp-icon-container{
+  display: block;
+  @include opacity(0.8);
+}
+.cp-icon:hover{
+  text-decoration: none;
+  outline: 0;
+  label{
+    color: $text-color;
+    @include transition();
+  }
+  .cp-icon-container{
+    @include opacity(1);
+  }
+}
+
+.login-with ul{
+
+}
+.sso-header{
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  .line{
+    position: absolute;
+    top:20px;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background: $gray-lighter;
+    z-index: -1;
+  }
+  .title{
+    display: inline-block;
+    padding: 10px 10px;
+    background: $body-bg;
+  }
+}

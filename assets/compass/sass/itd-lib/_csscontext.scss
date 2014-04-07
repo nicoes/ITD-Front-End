@@ -1,0 +1,31 @@
+body
+{
+	&:after
+	{
+        display: block;
+        visibility: hidden;
+        overflow: hidden;
+        height: 0;
+	}
+	@include gs-media(ma,min)
+	{
+		&:after
+		{
+			content: "mobile";
+		}
+	}
+	@include gs-media(ta,min)
+	{
+		&:after
+		{
+			content: "tablet";
+		}
+	}
+	@include gs-media(da,min)
+	{
+		&:after
+		{
+			content: "desktop";
+		}
+	}
+}
